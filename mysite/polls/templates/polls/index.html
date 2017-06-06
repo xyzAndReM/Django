@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <title>question_contents</title>
+    {%load staticfiles%}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel='stylesheet' href="/static/polls/css/bootstrap.min.css">
+    <script src="/static/polls/js/bootstrap.js" type="text/javascript"></script>
+    <script src="/static/polls/js/quizz.js" type="text/javascript"></script>
+    
+</head>
+
+
+<div class="container container-table">
+    <div class="row vertical-center-row">
+        <div class="text-center col-md-4 col-md-offset-4">
+
+
+{% if list_list %}
+    <ul>
+    {% for tema in list_list %}
+        <li><a href="{% url 'polls:list_contents' tema.id %}">{{ tema.list_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No lists are available.</p>
+{% endif %}
+
+
+</div>
+</div>
+</div>
+
+</html>
