@@ -25,8 +25,8 @@
 			{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 			<p>{{question.question_text2}}</p>
-			<p>{{question.image}}</p>
-			<img src="/static/polls/{{question.image.url}}"  style="width:400px;height:300px;">
+			
+			<img src="/static/polls/media/{{question.image.url}}"  style="width:400px;height:300px;">
  			<p> Resposta: <input type="text" name="fname" id="answer"><br>
   <button id ="respond" onclick="responder('{{question.question_text3}}')">Submeter</button>
 </p>

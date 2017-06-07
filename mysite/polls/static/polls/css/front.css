@@ -1,0 +1,30 @@
+<style type="text/css">
+@font-face {
+    font-family: "maqna";
+    src: local("/static/polls/fonts/TravellingTypewriter.ttf") format("truetype");
+}
+
+
+
+
+li>a {
+	font-family:"maqna";
+	font-size:30px;
+	color: #B58532;
+}
+ul {
+  list-style-type: none;
+}
+.wrap{
+    color:#fff;
+}
+body {
+  background-color:#ce3635;
+  text-align: center;
+  color:#fff;
+  padding-top:1em;
+  font-family:"maqna";
+  font-size:30px;
+}
+
+* { color:#fff; text-decoration: none;}
